@@ -1,0 +1,4 @@
+[10:45:56][I]: Starting Goodman HTS Pipeline Log
+[10:45:56][I]: Local Time    : 2024-05-24 10:45:56.325537
+[10:45:56][I]: Universal Time: 2024-05-24 14:45:56.325585
+[10:45:59][I]: Pipeline Version: 1.3.7 (latest)
