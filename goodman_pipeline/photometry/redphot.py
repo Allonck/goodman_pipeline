@@ -80,7 +80,7 @@ def get_args(arguments=None):
                         dest='source_id',
                         metavar='<value>',
                         type=int,
-                        help="Source ID for FWHM estimation. Default 5")
+                        help="Source ID for FWHM estimation. Default 0")
 
     parser.add_argument('--pixscale',
                         action='store',
@@ -174,6 +174,9 @@ class MainApp(object):
         self.log = logging.getLogger(__name__)
         self.args = get_args()
         self.log.debug('Initializing AperturePhotometry instance')
+        self.full_path = None
+        self._pipeline_version = __version__
+
 
     def run(self):
         """Main execution method for the application.
